@@ -27,6 +27,7 @@
   --color-blue-dim:       rgba(0,148,255,0.10);
   --color-purple:         #a855f7;
   --color-purple-dim:     rgba(168,85,247,0.12);
+  --color-on-accent:      #000000;
 
   /* Status */
   --color-danger:         #ef4444;
@@ -40,6 +41,7 @@
   --color-success-border: rgba(34,197,94,0.30);
   --color-info:           #0094ff;
   --color-info-dim:       rgba(0,148,255,0.10);
+  --color-info-border:    rgba(0,148,255,0.30);
 
   /* Shadows */
   --shadow-sm:     0 1px 3px rgba(0,0,0,0.3);
