@@ -199,6 +199,18 @@ No build step, no `dist/` directory — the source files are the published files
 |---|---|
 | [`@man4ish/ui`](https://github.com/man4ish/omnibioai-ui) | Required peer dep — all components reference these tokens |
 | [`omnibioai-studio`](https://github.com/man4ish/omnibioai-studio) | Electron + React desktop app |
+| `omnibioai-control-center` | CSS report uses design tokens for themed dashboard |
+
+---
+
+## Current version
+
+Published as `@man4ish/design-tokens` to GitHub Packages.
+47 CSS custom properties — colors, typography, spacing,
+border radius, shadows, and layout.
+
+All OmniBioAI frontend surfaces (Electron app, web UI,
+ecosystem report) use these tokens as the single source of truth.
 
 ---
 
@@ -218,4 +230,4 @@ Never remove or rename an existing token without a major version bump — consum
 
 ## License
 
-MIT
+Apache 2.0
