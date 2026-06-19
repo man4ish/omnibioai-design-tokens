@@ -1,6 +1,6 @@
 {
   "name": "@man4ish/design-tokens",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "OmniBioAI unified design tokens",
   "main": "tokens.js",
   "types": "tokens.ts",

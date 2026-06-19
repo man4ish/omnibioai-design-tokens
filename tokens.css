@@ -80,3 +80,36 @@
   background: var(--color-border);
   border-radius: var(--radius-xs);
 }
+
+/* Aliases for @man4ish/ui component compatibility */
+:root {
+  --color-background-primary:   var(--color-bg-elevated);
+  --color-background-secondary: var(--color-bg-surface);
+  --color-background-tertiary:  var(--color-bg);
+  --color-background-info:      var(--color-info-dim);
+  --color-background-danger:    var(--color-danger-dim);
+  --color-background-success:   var(--color-success-dim);
+  --color-background-warning:   var(--color-warning-dim);
+
+  --color-text-primary:   var(--color-text);
+  --color-text-secondary: var(--color-text-soft);
+  --color-text-tertiary:  var(--color-text-muted);
+  --color-text-info:      var(--color-blue);
+  --color-text-danger:    var(--color-danger);
+  --color-text-success:   var(--color-success);
+  --color-text-warning:   var(--color-warning);
+
+  --color-border-primary:   var(--color-border-bright);
+  --color-border-secondary: var(--color-border);
+  --color-border-tertiary:  var(--color-border-muted);
+  --color-border-info:      var(--color-info-border);
+  --color-border-danger:    var(--color-danger-border);
+  --color-border-success:   var(--color-success-border);
+  --color-border-warning:   var(--color-warning-border);
+
+  --border-radius-md: 8px;
+  --border-radius-lg: 12px;
+  --border-radius-xl: 16px;
+  --font-sans: system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
