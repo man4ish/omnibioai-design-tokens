@@ -1,5 +1,5 @@
 {
-  "name": "@man4ish/design-tokens",
+  "name": "@omnibioai/design-tokens",
   "version": "1.0.1",
   "description": "OmniBioAI unified design tokens",
   "main": "tokens.js",
@@ -8,10 +8,15 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/man4ish/omnibioai-design-tokens.git"
+    "url": "git+https://github.com/OmniBioAI/omnibioai-design-tokens.git"
+  },
+  "exports": {
+    ".": "./tokens.js",
+    "./tokens.css": "./tokens.css",
+    "./tokens.js": "./tokens.js"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com",
-    "@man4ish:registry": "https://npm.pkg.github.com"
+    "@omnibioai:registry": "https://npm.pkg.github.com"
   }
 }
