@@ -1,19 +1,19 @@
-# @man4ish/design-tokens
+# @omnibioai/design-tokens
 
-Unified design token system for the [OmniBioAI](https://github.com/man4ish/omnibioai-studio) platform — 47 CSS custom properties covering colors, typography, spacing, border radius, and shadows. Single source of truth for all OmniBioAI frontend surfaces.
+Unified design token system for the [OmniBioAI](https://github.com/OmniBioAI/omnibioai-studio) platform — 47 CSS custom properties covering colors, typography, spacing, border radius, and shadows. Single source of truth for all OmniBioAI frontend surfaces.
 
 ---
 
 ## Installation
 
-This package is published to the GitHub Packages registry under `@man4ish`.
+This package is published to the GitHub Packages registry under `@omnibioai`.
 
 ### 1. Authenticate with GitHub Packages
 
 Add to `.npmrc` in your project root:
 
 ```
-@man4ish:registry=https://npm.pkg.github.com
+@omnibioai:registry=https://npm.pkg.github.com
 //npm.pkg.github.com/:_authToken=YOUR_GITHUB_TOKEN
 ```
 
@@ -22,7 +22,7 @@ Your token needs `read:packages` scope. Generate one at GitHub → Settings → 
 ### 2. Install
 
 ```bash
-npm install @man4ish/design-tokens
+npm install @omnibioai/design-tokens
 ```
 
 No peer dependencies. No build step required — the package ships the final files directly.
@@ -38,13 +38,13 @@ The package ships three files. Use whichever fits your stack:
 Import once at your app entry point:
 
 ```css
-@import '@man4ish/design-tokens/tokens.css';
+@import '@omnibioai/design-tokens/tokens.css';
 ```
 
 Or in your JS/TS entry:
 
 ```ts
-import '@man4ish/design-tokens/tokens.css';
+import '@omnibioai/design-tokens/tokens.css';
 ```
 
 All 47 tokens are then available as CSS custom properties throughout your app:
@@ -63,7 +63,7 @@ All 47 tokens are then available as CSS custom properties throughout your app:
 ### JS/ESM
 
 ```ts
-import { tokens } from '@man4ish/design-tokens';
+import { tokens } from '@omnibioai/design-tokens';
 
 console.log(tokens.colorAccent);  // '#...'
 ```
@@ -185,7 +185,7 @@ omnibioai-design-tokens/
 ├── tokens.css    ← CSS custom properties on :root — primary distribution format
 ├── tokens.js     ← ESM export of token values as JS object
 ├── tokens.ts     ← TypeScript definitions
-├── package.json  ← published as @man4ish/design-tokens to GitHub Packages
+├── package.json  ← published as @omnibioai/design-tokens to GitHub Packages
 └── .npmrc        ← scoped registry config
 ```
 
@@ -197,15 +197,15 @@ No build step, no `dist/` directory — the source files are the published files
 
 | Package | How |
 |---|---|
-| [`@man4ish/ui`](https://github.com/man4ish/omnibioai-ui) | Required peer dep — all components reference these tokens |
-| [`omnibioai-studio`](https://github.com/man4ish/omnibioai-studio) | Electron + React desktop app |
+| [`@omnibioai/ui`](https://github.com/OmniBioAI/omnibioai-ui) | Required peer dep — all components reference these tokens |
+| [`omnibioai-studio`](https://github.com/OmniBioAI/omnibioai-studio) | Electron + React desktop app |
 | `omnibioai-control-center` | CSS report uses design tokens for themed dashboard |
 
 ---
 
 ## Current version
 
-Published as `@man4ish/design-tokens` to GitHub Packages.
+**v1.0.1**, published as `@omnibioai/design-tokens` to GitHub Packages.
 47 CSS custom properties — colors, typography, spacing,
 border radius, shadows, and layout.
 
@@ -230,4 +230,4 @@ Never remove or rename an existing token without a major version bump — consum
 
 ## License
 
-Apache 2.0
+MIT
